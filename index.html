@@ -147,25 +147,20 @@
 
       <div class="hero__visual">
         <div class="hero__halo"></div>
-        <!-- ============ COSMOS / SOLAR SYSTEM ============ -->
         <div class="cosmos" aria-hidden="true">
           <div class="cosmos__field"></div>
           <div class="cosmos__stars"></div>
           <div class="cosmos__comet"></div>
-
-          <!-- Mantra ring around the cosmos -->
           <div class="cosmos__mantra">
             <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <path id="cosmosMantraPath" d="M 200,200 m -184,0 a 184,184 0 1,1 368,0 a 184,184 0 1,1 -368,0"/>
               </defs>
-              <text font-family="Cinzel, serif" font-size="13" letter-spacing="5" fill="currentColor">
+              <text font-size="13" letter-spacing="5" fill="currentColor">
                 <textPath href="#cosmosMantraPath">&#x2756; OM &#x2756; SHANTI &#x2756; PROSPERITY &#x2756; HARMONY &#x2756; WISDOM &#x2756; OM &#x2756; SHANTI &#x2756; PROSPERITY &#x2756; HARMONY &#x2756; WISDOM &#x2756;</textPath>
               </text>
             </svg>
           </div>
-
-          <!-- Orbits + planets -->
           <div class="cosmos__orbit cosmos__orbit--mercury"><span class="cosmos__planet cosmos__planet--mercury"></span></div>
           <div class="cosmos__orbit cosmos__orbit--venus"><span class="cosmos__planet cosmos__planet--venus"></span></div>
           <div class="cosmos__orbit cosmos__orbit--earth">
@@ -175,8 +170,6 @@
           </div>
           <div class="cosmos__orbit cosmos__orbit--mars"><span class="cosmos__planet cosmos__planet--mars"></span></div>
           <div class="cosmos__orbit cosmos__orbit--jupiter"><span class="cosmos__planet cosmos__planet--jupiter"></span></div>
-
-          <!-- Central Sun (with OM glyph) -->
           <div class="cosmos__sun"></div>
         </div>
       </div>
@@ -198,6 +191,24 @@
         <span class="compass-needle__needle"></span>
         <span class="compass-needle__pin"></span>
       </div>
+    </div>
+  </section>
+
+  <!-- ============ ACTION STRIP ============ -->
+  <section class="action-strip">
+    <div class="container action-strip__row">
+      <p class="action-strip__lede">
+        Speak with an expert today &mdash; <strong>first call is free</strong>.
+      </p>
+      <a href="tel:+917527000369" class="btn btn--gold">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1 1 0 0 0-1.02.24l-2.2 2.2a15.05 15.05 0 0 1-6.59-6.58l2.2-2.21a1 1 0 0 0 .25-1.01A11.36 11.36 0 0 1 8.5 4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1 17 17 0 0 0 17 17 1 1 0 0 0 1-1v-3.5a1 1 0 0 0-1-1z"/></svg>
+        Call +91 7527 000 369
+      </a>
+      <a href="https://wa.me/917527000369" class="btn btn--whatsapp">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.7-6.2a12 12 0 1 1 4.4 4.3L.05 24zM6.6 20.2l.4.2A10 10 0 1 0 3.5 17l.2.4-1 3.7 3.9-.9z"/></svg>
+        WhatsApp Us
+      </a>
+      <a href="contact.html" class="btn btn--ghost btn--ghost--light">Book Online</a>
     </div>
   </section>
 
@@ -468,6 +479,23 @@
     </div>
   </section>
 
+  <!-- ============ PRESS STRIP =============== -->
+  <!-- NOTE: replace these placeholder text marks with actual licensed logo files -->
+  <section class="press-strip">
+    <div class="container">
+      <p class="press-strip__head">As Featured In</p>
+      <div class="press-strip__row">
+        <span class="press-strip__logo">Times Now</span>
+        <span class="press-strip__logo press-strip__logo--accent">NDTV India</span>
+        <span class="press-strip__logo">Hindustan Times</span>
+        <span class="press-strip__logo press-strip__logo--accent">ABP News</span>
+        <span class="press-strip__logo">Zee News</span>
+        <span class="press-strip__logo press-strip__logo--accent">Aaj Tak</span>
+        <span class="press-strip__logo">India Today</span>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ ABOUT ============ -->
   <section class="about" id="about">
     <div class="container about__row">
@@ -659,7 +687,10 @@
           </div>
           <h3>Home Vastu Consultation</h3>
           <p>Transform your living space into a sanctuary of peace, health and prosperity with on-site or virtual energy mapping.</p>
-          <a href="vastu.html" class="svc__link">Learn more <span>&#8594;</span></a>
+          <div class="svc__foot">
+            <span class="svc__price">From <span style='color:var(--gold-600)'>₹15,000</span></span>
+            <a href="contact.html" class="svc__buy">Book Now <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
           <span class="svc__corner"></span>
         </article>
 
@@ -669,7 +700,10 @@
           </div>
           <h3>Industrial &amp; Factory Vastu</h3>
           <p>Boost productivity, reduce attrition and resolve recurring losses with energy alignment for warehouses and plants.</p>
-          <a href="vastu.html" class="svc__link">Learn more <span>&#8594;</span></a>
+          <div class="svc__foot">
+            <span class="svc__price">From <span style='color:var(--gold-600)'>₹50,000</span></span>
+            <a href="contact.html" class="svc__buy">Book Now <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
           <span class="svc__corner"></span>
         </article>
 
@@ -680,7 +714,10 @@
           </div>
           <h3>Quantum Vastu</h3>
           <p>The pioneering technique by Dr. Varun Chhabra &mdash; sacred geometry &amp; frequencies that correct energy without breaking a single wall.</p>
-          <a href="vastu.html" class="svc__link">Learn more <span>&#8594;</span></a>
+          <div class="svc__foot">
+            <span class="svc__price">From <span style='color:var(--gold-600)'>₹25,000</span></span>
+            <a href="contact.html" class="svc__buy">Book Now <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
           <span class="svc__corner"></span>
         </article>
 
@@ -690,7 +727,10 @@
           </div>
           <h3>Vastu Corrections</h3>
           <p>Pinpoint diagnostics and remedies using yantras, crystals and quantum tools &mdash; no demolition, just precision.</p>
-          <a href="vastu.html" class="svc__link">Learn more <span>&#8594;</span></a>
+          <div class="svc__foot">
+            <span class="svc__price">From <span style='color:var(--gold-600)'>₹10,000</span></span>
+            <a href="contact.html" class="svc__buy">Book Now <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
           <span class="svc__corner"></span>
         </article>
 
@@ -700,7 +740,10 @@
           </div>
           <h3>Resort &amp; Hospitality Vastu</h3>
           <p>Cosmic energy alignment for resorts and hotels &mdash; elevate guest experience, occupancy and reviews.</p>
-          <a href="vastu.html" class="svc__link">Learn more <span>&#8594;</span></a>
+          <div class="svc__foot">
+            <span class="svc__price">Custom Quote</span>
+            <a href="contact.html" class="svc__buy">Book Now <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
           <span class="svc__corner"></span>
         </article>
 
@@ -710,7 +753,10 @@
           </div>
           <h3>Restaurant &amp; Café Vastu</h3>
           <p>Energy flow tuned for footfall, customer satisfaction and steady profitability &mdash; from kitchen to cash counter.</p>
-          <a href="vastu.html" class="svc__link">Learn more <span>&#8594;</span></a>
+          <div class="svc__foot">
+            <span class="svc__price">From <span style='color:var(--gold-600)'>₹20,000</span></span>
+            <a href="contact.html" class="svc__buy">Book Now <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
           <span class="svc__corner"></span>
         </article>
 
@@ -720,7 +766,10 @@
           </div>
           <h3>Online Vastu &amp; Worldwide</h3>
           <p>Remote energy mapping for homes and businesses &mdash; serving clients across India, USA, UK, UAE, Canada and more.</p>
-          <a href="vastu.html" class="svc__link">Learn more <span>&#8594;</span></a>
+          <div class="svc__foot">
+            <span class="svc__price">From <span style='color:var(--gold-600)'>₹12,000</span></span>
+            <a href="contact.html" class="svc__buy">Book Now <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
           <span class="svc__corner"></span>
         </article>
 
@@ -730,7 +779,10 @@
           </div>
           <h3>Commercial &amp; Office Vastu</h3>
           <p>Boardrooms that decide better, sales floors that close faster &mdash; tuned cabin orientation and energy zones.</p>
-          <a href="vastu.html" class="svc__link">Learn more <span>&#8594;</span></a>
+          <div class="svc__foot">
+            <span class="svc__price">From <span style='color:var(--gold-600)'>₹18,000</span></span>
+            <a href="contact.html" class="svc__buy">Book Now <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
           <span class="svc__corner"></span>
         </article>
       </div>
@@ -813,6 +865,79 @@
           <li><span>4</span><div><h4>Lal Kitab &amp; Numerology</h4><p>Affordable remedies, name corrections and number alignment for daily harmony.</p></div></li>
         </ul>
         <a href="astrology.html" class="btn btn--gold">Get Your Reading</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OUR ASTROLOGERS ============ -->
+  <section class="astrologers" id="astrologers">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow"><span class="eyebrow__line"></span> Our Practitioners <span class="eyebrow__line"></span></span>
+        <h2 class="section__title">Talk to a <em>Verified Astrologer</em></h2>
+        <p class="section__sub">Each practitioner is mentored by Dr. Rajan and Dr. Varun, with at least five years of supervised practice before going live.</p>
+      </div>
+
+      <div class="astrologers__grid">
+        <article class="astro-card reveal">
+          <div class="astro-card__avatar" aria-hidden="true">RC</div>
+          <h3>Dr. Rajan Chhabra</h3>
+          <p class="astro-card__expertise">Vedic, BNN &amp; Lal Kitab &middot; Hindi, English, Punjabi</p>
+          <p class="astro-card__rating"><span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 &middot; 12k+ readings</p>
+          <div class="astro-card__meta">
+            <div><strong>38+ yrs</strong>Experience</div>
+            <div><strong>&#8377;2,100/-</strong>30 min</div>
+          </div>
+          <div class="astro-card__cta">
+            <a href="tel:+917527000369" class="btn btn--maroon">Call</a>
+            <a href="contact.html" class="btn btn--gold">Book</a>
+          </div>
+        </article>
+
+        <article class="astro-card reveal">
+          <div class="astro-card__avatar" aria-hidden="true">VC</div>
+          <h3>Dr. Varun Chhabra</h3>
+          <p class="astro-card__expertise">Quantum Vastu &amp; KP &middot; Hindi, English</p>
+          <p class="astro-card__rating"><span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 &middot; 6k+ readings</p>
+          <div class="astro-card__meta">
+            <div><strong>15+ yrs</strong>Experience</div>
+            <div><strong>&#8377;2,500/-</strong>30 min</div>
+          </div>
+          <div class="astro-card__cta">
+            <a href="tel:+917527000369" class="btn btn--maroon">Call</a>
+            <a href="contact.html" class="btn btn--gold">Book</a>
+          </div>
+        </article>
+
+        <article class="astro-card reveal">
+          <div class="astro-card__avatar" aria-hidden="true">AS</div>
+          <h3>Anita Sharma</h3>
+          <p class="astro-card__expertise">Numerology &amp; Tarot &middot; Hindi, English</p>
+          <p class="astro-card__rating"><span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.8 &middot; 3k+ readings</p>
+          <div class="astro-card__meta">
+            <div><strong>9 yrs</strong>Experience</div>
+            <div><strong>&#8377;1,200/-</strong>30 min</div>
+          </div>
+          <div class="astro-card__cta">
+            <a href="tel:+917527000369" class="btn btn--maroon">Call</a>
+            <a href="contact.html" class="btn btn--gold">Book</a>
+          </div>
+        </article>
+
+        <article class="astro-card reveal">
+          <div class="astro-card__avatar astro-card__avatar--offline" aria-hidden="true">PK</div>
+          <h3>Pranav Khurana</h3>
+          <p class="astro-card__expertise">Reiki &amp; Chakra Healing &middot; English, Hindi</p>
+          <p class="astro-card__rating"><span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.7 &middot; 1.8k+ sessions</p>
+          <div class="astro-card__meta">
+            <div><strong>7 yrs</strong>Experience</div>
+            <div><strong>&#8377;1,500/-</strong>45 min</div>
+          </div>
+          <div class="astro-card__cta">
+            <a href="contact.html" class="btn btn--ghost">Schedule</a>
+            <a href="contact.html" class="btn btn--gold">Book</a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -1057,6 +1182,102 @@
     </div>
   </section>
 
+  <!-- ============ BLOG TEASER ============ -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow"><span class="eyebrow__line"></span> From The Journal <span class="eyebrow__line"></span></span>
+        <h2 class="section__title">Latest <em>Insights &amp; Articles</em></h2>
+        <p class="section__sub">Practical wisdom from our practice &mdash; on Vastu, astrology, healing and the subtle energy that shapes daily life.</p>
+      </div>
+      <div class="blog__grid">
+        <article class="blog-card reveal">
+          <div class="blog-card__cover">
+            <span class="blog-card__tag">Vastu</span>
+            <div class="blog-card__cover-icon">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 16 L16 6 L28 16 V26 H4 Z"/><path d="M13 26 V18 H19 V26"/></svg>
+            </div>
+          </div>
+          <div class="blog-card__body">
+            <p class="blog-card__meta"><span>5 min read</span><span>&middot;</span><span>Home Vastu</span></p>
+            <h3>Five Vastu Mistakes Every New Homeowner Quietly Makes</h3>
+            <p>The kitchen orientation, the master-bedroom corner, the front-door direction &mdash; small choices that quietly tilt the energy of a home. Here is how to spot them early.</p>
+            <a href="#" class="blog-card__more">Read article</a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-card__cover">
+            <span class="blog-card__tag">Astrology</span>
+            <div class="blog-card__cover-icon">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="16" cy="16" r="11"/><path d="M16 5v22M5 16h22"/></svg>
+            </div>
+          </div>
+          <div class="blog-card__body">
+            <p class="blog-card__meta"><span>7 min read</span><span>&middot;</span><span>Vedic Astrology</span></p>
+            <h3>Reading the Dashas: Why Timing Matters More Than Prediction</h3>
+            <p>An accurate reading is less about telling the future and more about naming the season you are walking through. A short guide to dashas, sub-periods and their practical use.</p>
+            <a href="#" class="blog-card__more">Read article</a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-card__cover">
+            <span class="blog-card__tag">Healing</span>
+            <div class="blog-card__cover-icon">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 28S5 22 5 13a7 7 0 0 1 11-5 7 7 0 0 1 11 5c0 9-11 15-11 15z"/></svg>
+            </div>
+          </div>
+          <div class="blog-card__body">
+            <p class="blog-card__meta"><span>4 min read</span><span>&middot;</span><span>Energy Healing</span></p>
+            <h3>What a Reiki Session Actually Feels Like (And What It Doesn&apos;t)</h3>
+            <p>An honest, no-mysticism walkthrough of a first session &mdash; what to wear, what to expect, what is gentle clinical reality and what is genuine subtle work.</p>
+            <a href="#" class="blog-card__more">Read article</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APP DOWNLOAD ============ -->
+  <section class="app-cta">
+    <div class="container app-cta__row">
+      <div class="reveal">
+        <span class="eyebrow eyebrow--light"><span class="eyebrow__line"></span> Coming Soon <span class="eyebrow__line"></span></span>
+        <h2>The <em>GrandVastu</em> App</h2>
+        <p>Daily panchang, personalised muhurat alerts, your past readings, and one-tap calls to your favourite practitioner &mdash; all in your pocket.</p>
+        <div class="store-badges">
+          <a href="#" class="store-badge" aria-label="Get it on Google Play">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 1.6c-.4.4-.6 1-.6 1.7v17.4c0 .7.2 1.3.6 1.7l11-11.4-11-9.4zM14.7 10.6 17.7 8.6 5.4 1.5c-.4-.2-.7-.3-1-.3l10.3 9.4zM18.7 9.5l3.4 2c.7.4.7 1.6 0 2l-3.4 2-3.4-3 3.4-3zM5.4 22.5l9.3-9.4 3 3-12.3 7.1c-.4.2-.7.3-1 .3-.4 0-.7-.1-1-.3z"/></svg>
+            <span>
+              <span class="store-badge__small">Get it on</span>
+              <span class="store-badge__big">Google Play</span>
+            </span>
+          </a>
+          <a href="#" class="store-badge" aria-label="Download on the App Store">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 12.04c-.03-2.6 2.13-3.86 2.23-3.92-1.21-1.77-3.1-2.02-3.78-2.05-1.6-.16-3.13.94-3.95.94-.81 0-2.08-.92-3.42-.9-1.76.03-3.39 1.02-4.3 2.6-1.83 3.18-.47 7.88 1.31 10.46.86 1.26 1.89 2.68 3.24 2.63 1.31-.05 1.81-.85 3.39-.85 1.59 0 2.03.85 3.42.83 1.41-.03 2.31-1.29 3.17-2.55 1-1.46 1.41-2.88 1.43-2.96-.03-.01-2.74-1.05-2.77-4.16zM14.46 4.4c.71-.86 1.2-2.06 1.07-3.25-1.03.04-2.29.69-3.03 1.55-.66.76-1.24 1.98-1.09 3.16 1.15.09 2.33-.59 3.05-1.46z"/></svg>
+            <span>
+              <span class="store-badge__small">Download on the</span>
+              <span class="store-badge__big">App Store</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="app-cta__phone">
+          <div class="app-cta__screen">
+            <div class="app-cta__screen-logo">
+              <img src="assets/images/logo-md.jpg" alt="GrandVastu" />
+            </div>
+            <h4>GrandVastu</h4>
+            <p>Today&apos;s panchang &middot; tomorrow&apos;s muhurat &middot; your readings, all in one place.</p>
+            <span class="app-cta__screen-cta">Open my dashboard &rarr;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ CTA BAND ============ -->
   <section class="cta-band">
     <div class="container cta-band__row">
@@ -1218,6 +1439,22 @@
 
   <!-- Custom cursor on desktop -->
   <div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+
+  <!-- Mobile sticky CTA bar -->
+  <div class="sticky-cta" aria-label="Quick contact">
+    <a href="tel:+917527000369" class="sticky-cta__btn sticky-cta__btn--call">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1 1 0 0 0-1.02.24l-2.2 2.2a15.05 15.05 0 0 1-6.59-6.58l2.2-2.21a1 1 0 0 0 .25-1.01A11.36 11.36 0 0 1 8.5 4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1 17 17 0 0 0 17 17 1 1 0 0 0 1-1v-3.5a1 1 0 0 0-1-1z"/></svg>
+      Call
+    </a>
+    <a href="https://wa.me/917527000369" class="sticky-cta__btn sticky-cta__btn--wa">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.7-6.2a12 12 0 1 1 4.4 4.3L.05 24zM6.6 20.2l.4.2A10 10 0 1 0 3.5 17l.2.4-1 3.7 3.9-.9z"/></svg>
+      WhatsApp
+    </a>
+    <a href="contact.html" class="sticky-cta__btn sticky-cta__btn--book">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>
+      Book
+    </a>
+  </div>
 
   <script src="assets/js/script.js" defer></script>
 </body>
