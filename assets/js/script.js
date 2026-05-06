@@ -34,20 +34,35 @@
   const ham = $('#hamburger');
   const nav = $('#nav');
   const navClose = $('#navClose');
+  let backdrop = $('.nav__backdrop');
+  if (nav && !backdrop) {
+    backdrop = document.createElement('div');
+    backdrop.className = 'nav__backdrop';
+    backdrop.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(backdrop);
+  }
   const toggleNav = (open) => {
     if (!nav || !ham) return;
     const willOpen = typeof open === 'boolean' ? open : !nav.classList.contains('is-open');
     nav.classList.toggle('is-open', willOpen);
     ham.classList.toggle('is-open', willOpen);
+    if (backdrop) backdrop.classList.toggle('is-open', willOpen);
     ham.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
     document.body.style.overflow = willOpen ? 'hidden' : '';
   };
   if (ham) ham.addEventListener('click', () => toggleNav());
   if (navClose) navClose.addEventListener('click', () => toggleNav(false));
+  if (backdrop) backdrop.addEventListener('click', () => toggleNav(false));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && nav && nav.classList.contains('is-open')) toggleNav(false);
+  });
   $$('#nav .nav__link, #nav .nav__cta, #nav .nav__submenu a').forEach(a => {
     a.addEventListener('click', () => {
       if (window.innerWidth <= 980) toggleNav(false);
     });
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 980 && nav && nav.classList.contains('is-open')) toggleNav(false);
   });
 
   /* ---------- Active nav link on scroll (anchor links only) ---------- */

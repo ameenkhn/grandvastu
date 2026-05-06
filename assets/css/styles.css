@@ -271,10 +271,17 @@ html, body { max-width: 100%; overflow-x: clip; }
   top: 0;
   z-index: 1000;
   background: rgba(27, 10, 43, 0.92);
-  backdrop-filter: saturate(160%) blur(14px);
-  -webkit-backdrop-filter: saturate(160%) blur(14px);
   border-bottom: 1px solid rgba(244,196,48,0.18);
   transition: all .3s var(--ease-out);
+}
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  backdrop-filter: saturate(160%) blur(14px);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
+  z-index: -1;
+  pointer-events: none;
 }
 .header.is-scrolled {
   background: rgba(27, 10, 43, 0.98);
@@ -404,13 +411,28 @@ html, body { max-width: 100%; overflow-x: clip; }
 .hamburger.is-open span:nth-child(2) { opacity: 0; }
 .hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+.nav__backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 4, 19, 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 998;
+  opacity: 0;
+  transition: opacity .3s var(--ease-out);
+}
+.nav__backdrop.is-open { opacity: 1; }
+
 @media (max-width: 980px) {
   .hamburger { display: flex; }
+  .nav__backdrop { display: block; }
   .nav {
     position: fixed;
     top: 0; right: 0;
     width: 86%; max-width: 360px;
     height: 100vh;
+    height: 100dvh;
     background: var(--maroon-800);
     flex-direction: column;
     align-items: stretch;
@@ -420,8 +442,11 @@ html, body { max-width: 100%; overflow-x: clip; }
     transition: transform .4s var(--ease-out);
     z-index: 999;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
   }
   .nav.is-open { transform: translateX(0); }
+  .nav__backdrop:not(.is-open) { pointer-events: none; }
   .nav__close {
     display: block;
     position: absolute;
