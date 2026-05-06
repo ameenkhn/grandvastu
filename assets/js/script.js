@@ -86,7 +86,7 @@
   /* ---------- Multi-page active nav (defensive) ---------- */
   // If any nav link's pathname matches the current page, ensure it carries .is-active.
   const path = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
-  const SERVICE_PAGES = new Set(['vastu.html', 'astrology.html', 'healing.html', 'numerology.html', 'courses.html']);
+  const SERVICE_PAGES = new Set(['vastu.html', 'astrology.html', 'healing.html', 'numerology.html']);
   $$('.nav .nav__link').forEach(link => {
     const href = (link.getAttribute('href') || '').toLowerCase();
     if (!href || href.startsWith('#')) return;
