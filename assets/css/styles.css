@@ -206,15 +206,22 @@ html, body { max-width: 100%; overflow-x: clip; }
 }
 .preloader.is-hidden { opacity: 0; visibility: hidden; }
 .preloader__inner { text-align: center; color: var(--gold-400); }
-.preloader__mandala { width: 140px; height: 140px; animation: spinSlow 8s linear infinite; }
-.preloader__petals { animation: spinReverse 6s linear infinite; transform-origin: 100px 100px; }
-.preloader__text {
-  font-family: var(--font-serif);
-  font-size: 1.2rem;
-  letter-spacing: 0.06em;
-  margin-top: 18px;
-  color: var(--gold-400);
-  animation: pulse 2s ease-in-out infinite;
+.preloader__logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  padding: 4px;
+  border: 1.5px solid var(--gold-500);
+  box-shadow: 0 0 30px rgba(244,196,48,.35), 0 12px 30px rgba(0,0,0,.3);
+  display: block;
+  margin: 0 auto;
+  animation: preloaderLogo 2.4s ease-in-out infinite;
+}
+@keyframes preloaderLogo {
+  0%, 100% { transform: scale(1);    box-shadow: 0 0 24px rgba(244,196,48,.35), 0 12px 30px rgba(0,0,0,.3); }
+  50%      { transform: scale(1.05); box-shadow: 0 0 44px rgba(244,196,48,.6),  0 12px 30px rgba(0,0,0,.3); }
 }
 @keyframes spinSlow { to { transform: rotate(360deg); } }
 @keyframes spinReverse { to { transform: rotate(-360deg); } }
